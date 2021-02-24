@@ -18,7 +18,7 @@ public class Controller implements EventHandler<KeyEvent> {
     @FXML private Label gameOverLabel;
     @FXML private PacManView pacManView;
     private PacManModel pacManModel;
-    private static final String[] levelFiles = {"src/levels/level1.txt", "src/levels/level2.txt", "src/levels/level3.txt"};
+    private static final String[] levelFiles = {"src/levels/level1.txt", "src/levels/level2.txt"};
 
     private Timer timer;
     private static int ghostEatingModeCounter;
@@ -113,7 +113,6 @@ public class Controller implements EventHandler<KeyEvent> {
     public static void setGhostEatingModeCounter() {
         ghostEatingModeCounter = 25;
     }
-
     public static int getGhostEatingModeCounter() {
         return ghostEatingModeCounter;
     }

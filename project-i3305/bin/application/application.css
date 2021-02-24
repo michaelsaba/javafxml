@@ -1,1 +1,22 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.content{
+	-fx-background-color: black;
+	-fx-padding: 10px, 5px, 10px, 5px;
+}
+.left-label{
+	-fx-font-size: 150%; 
+	-fx-border-width:2;
+	-fx-border-color:white;
+	-fx-text-fill: white;
+}
+.center-label{
+	-fx-font-size: 150%; 
+	-fx-border-width:2;
+	-fx-border-color:white;
+	-fx-text-fill: white;
+}
+.right-label{
+	-fx-font-size: 150%;
+	-fx-border-width:2;
+	-fx-border-color:white;
+	-fx-text-fill: white;
+}

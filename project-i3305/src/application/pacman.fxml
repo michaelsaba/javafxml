@@ -1,20 +1,21 @@
-<?import javafx.scene.layout.AnchorPane?><?import application.PacManView?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?><?import application.PacManView?>
+<?import javafx.scene.control.Label?>
 <BorderPane fx:controller="application.Controller" style="-fx-background-color: black" xmlns:fx="http://javafx.com/fxml">
     <top>
-        <BorderPane prefHeight="25" style="-fx-background-color: black; -fx-padding: 10px, 5px, 10px, 5px" >
-            <left><Label fx:id="scoreLabel" style="-fx-font-size: 150%; -fx-text-fill: white" /></left>
-            <center><Label fx:id="gameOverLabel" style="-fx-font-size: 150%; -fx-text-fill: white" /></center>
-            <right><Label fx:id="levelLabel" style="-fx-font-size: 150%; -fx-text-fill: white"/></right>
-        </BorderPane>
+     <AnchorPane>
+        	<BorderPane prefHeight="25" styleClass="content" >
+            	<left><Label fx:id="scoreLabel" styleClass="left-label" /></left>
+            	<center><Label fx:id="gameOverLabel" styleClass="center-label" /></center>
+        	    <right><Label fx:id="levelLabel" styleClass="right-label"/></right>
+    	    </BorderPane>
+   	 </AnchorPane>
     </top>
-
+    
     <center>
         <PacManView fx:id="pacManView" rowCount="21" columnCount="19" />
     </center>
 
-    
 </BorderPane>

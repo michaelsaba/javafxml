@@ -142,8 +142,7 @@ public class PacManModel {
                 this.initializeLevel(Controller.getLevelFile(level - 1));
             }
             catch (ArrayIndexOutOfBoundsException e) {
-                //if there are no levels left in the level array, the game ends
-                youWon = true;
+            	youWon = true;
                 gameOver = true;
                 level--;
             }
@@ -427,10 +426,6 @@ public class PacManModel {
         return youWon;
     }
 
-    /**
-     * When all dots are eaten, level is complete
-     * @return boolean
-     */
     public boolean isLevelComplete() {
         return this.dotCount == 0;
     }

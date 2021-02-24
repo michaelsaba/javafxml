@@ -36,9 +36,6 @@ public class PacManView extends Group {
         this.smallDotImage = new Image(getClass().getResourceAsStream("/smalldot.png"));
     }
 
-    /**
-     * Constructs an empty grid of ImageViews
-     */
     private void initializeGrid() {
         if (this.rowCount > 0 && this.columnCount > 0) {
             this.cellViews = new ImageView[this.rowCount][this.columnCount];
@@ -111,7 +108,6 @@ public class PacManView extends Group {
             }
         }
     }
-
     public int getRowCount() {
         return this.rowCount;
     }
